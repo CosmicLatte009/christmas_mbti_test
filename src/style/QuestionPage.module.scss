@@ -1,0 +1,33 @@
+@import "utils";
+
+.book-icon {
+	margin: 52px 0 10px;
+	width: 40px;
+	height: 40px;
+}
+.index {
+	display: block;
+	@include font-style(
+		$font-uhbee,
+		map-get($font-size, large),
+		map-get($font-weight, large),
+		map-get($colors, text)
+	);
+}
+.paragraph {
+	padding: 25px 0 30.5px;
+	text-align: center;
+	line-height: 20px;
+	white-space: pre-line;
+	@include font-style(
+		$font-family,
+		map-get($font-size, small),
+		map-get($font-weight, small),
+		map-get($colors, text)
+	);
+}
+.btn-group {
+	& > button:first-child {
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,53 @@
+@import "utils";
+
+%btn {
+	width: 322px;
+	border-radius: 44px;
+	line-height: 44px;
+	background-position: center;
+	-webkit-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+
+	&:active {
+		background-color: map-get($colors, back);
+		background-size: 100%;
+		-webkit-transition: background 0s;
+		-o-transition: background 0s;
+		transition: background 0s;
+	}
+}
+.btn-bold {
+	@extend %btn;
+	@include font-style(
+		$font-family,
+		map-get($font-size, medium),
+		map-get($font-weight, medium),
+		#ffffff
+	);
+	background-color: map-get($colors, main);
+}
+
+.btn-option {
+	@extend %btn;
+	@include font-style(
+		$font-family,
+		map-get($font-size, small),
+		map-get($font-weight, small),
+		map-get($colors, text)
+	);
+
+	border: 1px solid map-get($colors, text);
+	background-color: map-get($colors, unselect);
+}
+
+.btn-selected {
+	@extend %btn;
+	@include font-style(
+		$font-family,
+		map-get($font-size, small),
+		map-get($font-weight, small),
+		#ffffff
+	);
+	background-color: map-get($colors, main);
+}

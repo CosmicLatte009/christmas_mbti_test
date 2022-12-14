@@ -1,0 +1,39 @@
+@import "utils";
+
+%fonts {
+	@include font-style(
+		$font-family,
+		map-get($font-size, small),
+		map-get($font-weight, medium),
+		map-get($colors, text)
+	);
+}
+.wrap {
+	display: inline-block;
+	width: 175px;
+	height: 250px;
+	border-radius: 10px;
+	border: 1.5px dashed map-get($colors, back);
+	cursor: pointer;
+
+	& h3 {
+		@extend %fonts;
+		&:before {
+			content: "";
+			display: block;
+			margin: 8.1px auto 7.5px;
+			width: 21.83px;
+			height: 3px;
+			border-radius: 10px;
+			background-color: map-get($colors, main);
+		}
+	}
+	& img {
+		margin-top: 10px;
+		width: 130px;
+	}
+	& p {
+		@extend %fonts;
+		margin-top: 7.5px;
+	}
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+$colors: (
+	main: #d98566,
+	secondary: #d93b3b,
+	tertiary: #307360,
+	back: #f2d5bb,
+	text: #592e15,
+	unselect: #ffffff,
+);
+
+$font-family: "Noto Sans KR", "sans-serif";
+$font-tMoney: "TmoneyRoundWindExtraBold", "sans-serif";
+$font-uhbee: "UhBeeHYUNJUNG", "sans-serif";
+$font-size: (
+	xlarge: 28px,
+	large: 18px,
+	medium: 16px,
+	small: 14px,
+	xSmall: 12px,
+);
+$font-weight: (
+	large: 700,
+	medium: 600,
+	small: 500,
+	xSmall: 400,
+);
+
+@mixin font-style($family, $size, $weight, $color) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+// @font-face {
+// 	font-family: "TmoneyRoundWindExtraBold";
+// 	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff")
+// 		format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: "UhBeeHYUNJUNG";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeHYUNJUNG.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,50 @@
+@import "utils";
+
+.candles-icon {
+	margin-top: 50px;
+	width: 45px;
+	height: 45px;
+}
+.title {
+	margin-top: 20px;
+	@include font-style(
+		$font-uhbee,
+		map-get($font-size, xlarge),
+		map-get($font-weight, xLarge),
+		map-get($colors, text)
+	);
+}
+.boxes {
+	margin-bottom: 38.4px;
+}
+.box {
+	margin: 10px auto;
+	width: 300px;
+	padding: 10px;
+	overflow: hidden;
+	border: 1.5px dashed map-get($colors, back);
+	border-radius: 10px;
+	cursor: pointer;
+
+	.ranking {
+		line-height: 60px;
+		@include font-style(
+			$font-uhbee,
+			map-get($font-size, large),
+			map-get($font-weight, large),
+			map-get($colors, text)
+		);
+	}
+	& img {
+		float: left;
+		width: 100px;
+	}
+	& p {
+		@include font-style(
+			$font-uhbee,
+			map-get($font-size, large),
+			map-get($font-weight, xSmall),
+			map-get($colors, text)
+		);
+	}
+}

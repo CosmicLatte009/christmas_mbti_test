@@ -1,0 +1,15 @@
+@import "utils";
+
+.desc {
+	margin: 45px 14px 40px;
+
+	h2 {
+		@include font-style(
+			$font-family,
+			map-get($font-size, medium),
+			map-get($font-weight, medium),
+			map-get($colors, text)
+		);
+		margin-bottom: 35px;
+	}
+}

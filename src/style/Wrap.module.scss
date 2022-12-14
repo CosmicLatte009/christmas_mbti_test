@@ -1,0 +1,25 @@
+@import "utils";
+
+body {
+	background-color: lighten(map-get($colors, back), 12%);
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		height: 5%;
+		background-color: map-get($colors, tertiary);
+		border-radius: 10px;
+	}
+	&::--webkit-scrollbar {
+		background-color: #dbdbdbdb;
+	}
+}
+.wrapper {
+	margin-top: 51px;
+	margin: 0 auto;
+	width: 390px;
+	height: 100%;
+	text-align: center;
+	background-color: lighten(map-get($colors, back), 12%);
+}

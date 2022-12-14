@@ -1,0 +1,40 @@
+@import "utils";
+
+.title {
+	@include font-style(
+		$font-family,
+		map-get($font-size, medium),
+		map-get($font-weight, medium),
+		map-get($colors, text)
+	);
+	padding: 10px;
+	background-image: url("../assets/svg/icon_label.svg");
+	background-position: 38%;
+	background-repeat: no-repeat;
+	background-size: 30px;
+}
+.result-list {
+	@include font-style(
+		$font-family,
+		map-get($font-size, medium),
+		map-get($font-weight, medium),
+		map-get($colors, main)
+	);
+	text-align: center;
+	margin: 15px 0 10px;
+
+	li {
+		list-style: inside;
+		text-indent: -17.5px;
+		word-break: keep-all;
+		padding: 0 20px 6px 40px;
+		text-align: left;
+		line-height: 19.7px;
+		@include font-style(
+			$font-family,
+			map-get($font-size, small),
+			map-get($font-weight, small),
+			map-get($colors, text)
+		);
+	}
+}

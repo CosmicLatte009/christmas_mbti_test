@@ -1,0 +1,36 @@
+@import "utils";
+
+.bow-icon {
+	width: 45px;
+	height: 45px;
+}
+.title {
+	margin: 5px 0 30.5px;
+}
+.phrase {
+	margin-top: 60px;
+	text-decoration: underline;
+	-webkit-text-decoration-style: dashed;
+	text-decoration-style: dashed;
+	-webkit-text-decoration-color: map-get($colors, back);
+	text-decoration-color: map-get($colors, back);
+	@include font-style(
+		$font-family,
+		map-get($font-size, large),
+		map-get($font-weight, large),
+		map-get($colors, text)
+	);
+}
+.paragraph {
+	margin: 40px 0 30.5px;
+
+	& p {
+		line-height: 19.7px;
+		@include font-style(
+			$font-family,
+			map-get($font-size, small),
+			map-get($font-weight, small),
+			map-get($colors, text)
+		);
+	}
+}

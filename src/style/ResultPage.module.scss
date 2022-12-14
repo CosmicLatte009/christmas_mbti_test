@@ -1,0 +1,21 @@
+@import "utils";
+
+.bow-icon {
+	width: 45px;
+	height: 45px;
+}
+.title {
+	margin: 8px 0 25px;
+	@include font-style(
+		$font-uhbee,
+		map-get($font-size, xlarge),
+		map-get($font-weight, xLarge),
+		map-get($colors, text)
+	);
+}
+
+.btn-group {
+	& > button:first-child {
+		margin-bottom: 15px;
+	}
+}
