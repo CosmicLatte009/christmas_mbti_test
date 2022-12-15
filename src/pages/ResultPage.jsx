@@ -9,6 +9,7 @@ import ResultDesc from "../components/ResultDesc";
 import Button from "../components/Button";
 import styles from "../style/ResultPage.module.scss";
 import btns from "../style/Button.module.scss";
+import KakaoShareButton from "../components/KakaoShareButton";
 
 const ResultPage = () => {
 	const navigate = useNavigate();
@@ -43,6 +44,9 @@ const ResultPage = () => {
 					<Button className={btns["btn-bold"]} onClick={() => navigate("/")}>
 						테스트 다시하기
 					</Button>
+					<div className={styles["sns-group"]}>
+						<KakaoShareButton resultData={resultData} />
+					</div>
 				</div>
 			</main>
 		</Wrapper>
