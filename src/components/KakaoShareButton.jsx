@@ -12,12 +12,11 @@ const KakaoShareButton = ({ resultData }) => {
 	}, []);
 
 	const shareKakao = () => {
-		// 링크가 전송되면 앱의 링크 콜백이 설정된 URL 및 메소드로 콜백이 전송됩니다.
 		Kakao.Share.sendDefault({
 			objectType: "feed",
 			content: {
-				title: "크리스마스 질투 유형 결과",
-				description: `당신의 질투 유형 결과는 ${resultData.name}입니다`,
+				title: "🎄내 크리스마스 질투 유형 결과🎄",
+				description: `당신은 "${resultData.name}" 유형입니다`,
 				imageUrl: url + resultData.image,
 				link: {
 					mobileWebUrl: resultUrl,
@@ -26,7 +25,7 @@ const KakaoShareButton = ({ resultData }) => {
 			},
 			buttons: [
 				{
-					title: "나도 테스트 하러가기",
+					title: "테스트 하러가기",
 					link: {
 						mobileWebUrl: url,
 						webUrl: url,

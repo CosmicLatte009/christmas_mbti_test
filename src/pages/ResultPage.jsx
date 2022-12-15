@@ -7,9 +7,7 @@ import Match from "../components/Match";
 import Guage from "../components/Guage";
 import ResultDesc from "../components/ResultDesc";
 import Button from "../components/Button";
-import FacebookShareButton from "../components/FacebookShareButton";
-import KakaoShareButton from "../components/KakaoShareButton";
-import TwitterShareButton from "../components/TwitterShareButton";
+import ShareButton from "../components/ShareButton.jsx";
 import styles from "../style/ResultPage.module.scss";
 import btns from "../style/Button.module.scss";
 
@@ -18,7 +16,6 @@ const ResultPage = () => {
 	const [searchParams] = useSearchParams();
 	const mbti = searchParams.get("mbti");
 
-	//최종적으로 도출한 결과 객체
 	const [resultData, setResultData] = useState({});
 
 	useEffect(() => {
@@ -39,18 +36,14 @@ const ResultPage = () => {
 				<div className={styles["btn-group"]}>
 					<Button
 						className={btns["btn-bold"]}
-						onClick={() => navigate("/allResult")}
+						onClick={() => navigate("/allResult", { state: resultData })}
 					>
 						내 유형 질투력 순위 보기
 					</Button>
 					<Button className={btns["btn-bold"]} onClick={() => navigate("/")}>
 						테스트 다시하기
 					</Button>
-					<div className={styles["sns-group"]}>
-						<FacebookShareButton />
-						<KakaoShareButton resultData={resultData} />
-						<TwitterShareButton />
-					</div>
+					<ShareButton resultData={resultData} />
 				</div>
 			</main>
 		</Wrapper>
