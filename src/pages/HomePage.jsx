@@ -4,7 +4,7 @@ import { ReactComponent as TitleLogo } from "../assets/svg/logo.svg";
 import { ReactComponent as Bow } from "../assets/svg/icon_bow.svg";
 import Wrapper from "../components/Wrapper";
 import Button from "../components/Button";
-import btns from "../style/Button.module.scss";
+// import btns from "../style/Button.module.scss";
 import styles from "../style/HomePage.module.scss";
 
 const HomePage = () => {
@@ -31,7 +31,7 @@ const HomePage = () => {
 					</p>
 					<p> 하지만 기대와 달리 마음 불편한 일들이 일어나는데...</p>
 				</div>
-				<Button className={btns["btn-bold"]} onClick={handleBtnClick}>
+				<Button bold onClick={handleBtnClick}>
 					테스트 시작하기
 				</Button>
 			</main>

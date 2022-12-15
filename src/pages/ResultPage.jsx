@@ -9,7 +9,6 @@ import ResultDesc from "../components/ResultDesc";
 import Button from "../components/Button";
 import ShareButton from "../components/ShareButton.jsx";
 import styles from "../style/ResultPage.module.scss";
-import btns from "../style/Button.module.scss";
 
 const ResultPage = () => {
 	const navigate = useNavigate();
@@ -35,12 +34,12 @@ const ResultPage = () => {
 				<Match resultData={resultData} />
 				<div className={styles["btn-group"]}>
 					<Button
-						className={btns["btn-bold"]}
+						bold
 						onClick={() => navigate("/allResult", { state: resultData })}
 					>
 						내 유형 질투력 순위 보기
 					</Button>
-					<Button className={btns["btn-bold"]} onClick={() => navigate("/")}>
+					<Button bold onClick={() => navigate("/")}>
 						테스트 다시하기
 					</Button>
 					<ShareButton resultData={resultData} />

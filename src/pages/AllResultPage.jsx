@@ -5,7 +5,6 @@ import { ReactComponent as Candles } from "../assets/svg/icon_candles.svg";
 import Wrapper from "../components/Wrapper";
 import Button from "../components/Button";
 import styles from "../style/AllResultPage.module.scss";
-import btns from "../style/Button.module.scss";
 
 const AllResultPage = () => {
 	const navigate = useNavigate();
@@ -36,9 +35,11 @@ const AllResultPage = () => {
 						</div>
 					))}
 				</section>
-				<Button className={btns["btn-bold"]} onClick={() => navigate("/")}>
-					테스트 다시하기
-				</Button>
+				<div className={styles["btn-wrap"]}>
+					<Button bold onClick={() => navigate("/")}>
+						테스트 다시하기
+					</Button>
+				</div>
 			</main>
 		</Wrapper>
 	);
