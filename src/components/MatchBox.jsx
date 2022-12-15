@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate, createSearchParams } from "react-router-dom";
 import styles from "../style/MatchBox.module.scss";
 
-const MatchBox = ({ ...props }) => {
+const MatchBox = (props) => {
 	const { children, link, compare, compareImg } = props;
 	const navigate = useNavigate();
 

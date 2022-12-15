@@ -2,9 +2,7 @@ import React from "react";
 import styles from "../style/Match.module.scss";
 import MatchBox from "./MatchBox";
 
-const Guage = ({ ...props }) => {
-	const { resultData } = props;
-
+const Guage = ({ resultData }) => {
 	return (
 		<div className={styles.match}>
 			<MatchBox

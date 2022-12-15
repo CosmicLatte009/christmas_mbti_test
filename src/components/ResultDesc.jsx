@@ -2,9 +2,7 @@ import React from "react";
 import styles from "../style/ResultDesc.module.scss";
 import ResultList from "./ResultList";
 
-const ResultDesc = ({ ...props }) => {
-	const { resultData } = props;
-
+const ResultDesc = ({ resultData }) => {
 	const arrJealousy = (resultData.jealousyDesc || "").split("\n");
 	const arrGuilty = (resultData.guiltyDesc || "").split("\n");
 	const arrCompare = (resultData.compareDesc || "").split("\n");
