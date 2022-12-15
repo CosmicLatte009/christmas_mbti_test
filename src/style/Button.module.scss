@@ -17,7 +17,7 @@
 		transition: background 0s;
 	}
 }
-.btn-bold {
+.bold {
 	@extend %btn;
 	@include font-style(
 		$font-family,
@@ -28,7 +28,7 @@
 	background-color: map-get($colors, main);
 }
 
-.btn-option {
+.option {
 	@extend %btn;
 	@include font-style(
 		$font-family,
@@ -39,15 +39,4 @@
 
 	border: 1px solid map-get($colors, text);
 	background-color: map-get($colors, unselect);
-}
-
-.btn-selected {
-	@extend %btn;
-	@include font-style(
-		$font-family,
-		map-get($font-size, small),
-		map-get($font-weight, small),
-		#ffffff
-	);
-	background-color: map-get($colors, main);
 }

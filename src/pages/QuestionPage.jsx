@@ -4,7 +4,6 @@ import { QuestionData } from "../assets/data/questionData";
 import { ReactComponent as BookSVG } from "../assets/svg/icon_book.svg";
 import Wrapper from "../components/Wrapper";
 import Button from "../components/Button";
-import btns from "../style/Button.module.scss";
 import styles from "../style/QuestionPage.module.scss";
 
 const QuestionPage = () => {
@@ -50,13 +49,13 @@ const QuestionPage = () => {
 			<div className={styles.paragraph}>{QuestionData[questionNum].title}</div>
 			<div className={styles["btn-group"]}>
 				<Button
-					className={btns["btn-option"]}
+					option
 					onClick={() => handleClickBtn(1, QuestionData[questionNum].type)}
 				>
 					{QuestionData[questionNum].answera}
 				</Button>
 				<Button
-					className={btns["btn-option"]}
+					option
 					onClick={() => handleClickBtn(0, QuestionData[questionNum].type)}
 				>
 					{QuestionData[questionNum].answerb}
