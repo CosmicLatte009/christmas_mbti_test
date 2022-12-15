@@ -2,9 +2,7 @@ import React from "react";
 import styles from "../style/Guage.module.scss";
 import GuageHeart from "./GuageHeart";
 
-const Guage = ({ ...props }) => {
-	const { resultData } = props;
-
+const Guage = ({ resultData }) => {
 	const jealousyHearts = resultData.jealousyGuage;
 	let jealousyHeartArr = new Array(jealousyHearts).fill(0);
 

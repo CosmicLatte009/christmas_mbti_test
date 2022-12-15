@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../style/ResultList.module.scss";
 
-const ResultList = ({ ...props }) => {
+const ResultList = (props) => {
 	const { children, arr } = props;
 
 	return (
