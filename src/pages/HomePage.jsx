@@ -31,9 +31,11 @@ const HomePage = () => {
 					</p>
 					<p> 하지만 기대와 달리 마음 불편한 일들이 일어나는데...</p>
 				</div>
-				<Button bold onClick={handleBtnClick}>
-					테스트 시작하기
-				</Button>
+				<div className={styles["btn-wrap"]}>
+					<Button bold onClick={handleBtnClick}>
+						테스트 시작하기
+					</Button>
+				</div>
 			</main>
 		</Wrapper>
 	);
