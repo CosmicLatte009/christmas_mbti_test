@@ -7,9 +7,11 @@ import Match from "../components/Match";
 import Guage from "../components/Guage";
 import ResultDesc from "../components/ResultDesc";
 import Button from "../components/Button";
+import FacebookShareButton from "../components/FacebookShareButton";
+import KakaoShareButton from "../components/KakaoShareButton";
+import TwitterShareButton from "../components/TwitterShareButton";
 import styles from "../style/ResultPage.module.scss";
 import btns from "../style/Button.module.scss";
-import KakaoShareButton from "../components/KakaoShareButton";
 
 const ResultPage = () => {
 	const navigate = useNavigate();
@@ -45,7 +47,9 @@ const ResultPage = () => {
 						테스트 다시하기
 					</Button>
 					<div className={styles["sns-group"]}>
+						<FacebookShareButton />
 						<KakaoShareButton resultData={resultData} />
+						<TwitterShareButton />
 					</div>
 				</div>
 			</main>
