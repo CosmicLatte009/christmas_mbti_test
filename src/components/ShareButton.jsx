@@ -9,7 +9,7 @@ const ShareButton = ({ resultData }) => {
 		<div className={styles["sns-group"]}>
 			<FacebookShareButton />
 			<KakaoShareButton resultData={resultData} />
-			<TwitterShareButton />
+			<TwitterShareButton resultData={resultData} />
 		</div>
 	);
 };
