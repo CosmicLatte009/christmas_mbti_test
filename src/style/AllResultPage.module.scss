@@ -1,12 +1,11 @@
 @import "utils";
 
 .candles-icon {
-	margin-top: 50px;
 	width: 45px;
 	height: 45px;
 }
 .title {
-	margin-top: 20px;
+	margin: 20px 0 50px;
 	@include font-style(
 		$font-uhbee,
 		map-get($font-size, xlarge),

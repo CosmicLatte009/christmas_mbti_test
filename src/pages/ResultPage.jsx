@@ -25,26 +25,24 @@ const ResultPage = () => {
 
 	return (
 		<Wrapper>
-			<main>
-				<Bow className={styles["bow-icon"]} />
-				<h1 className={styles.title}>{resultData.name}</h1>
-				<img src={resultData.image} alt="결과 이미지" width={300}></img>
-				<Guage resultData={resultData} />
-				<ResultDesc resultData={resultData} />
-				<Match resultData={resultData} />
-				<div className={styles["btn-group"]}>
-					<Button
-						bold
-						onClick={() => navigate("/allResult", { state: resultData })}
-					>
-						내 유형 질투력 순위 보기
-					</Button>
-					<Button bold onClick={() => navigate("/")}>
-						테스트 다시하기
-					</Button>
-					<ShareButton resultData={resultData} />
-				</div>
-			</main>
+			<Bow className={styles["bow-icon"]} />
+			<h1 className={styles.title}>{resultData.name}</h1>
+			<img src={resultData.image} alt="결과 이미지" width={300}></img>
+			<Guage resultData={resultData} />
+			<ResultDesc resultData={resultData} />
+			<Match resultData={resultData} />
+			<div className={styles["btn-group"]}>
+				<Button
+					bold
+					onClick={() => navigate("/allResult", { state: resultData })}
+				>
+					내 유형 질투력 순위 보기
+				</Button>
+				<Button bold onClick={() => navigate("/")}>
+					테스트 다시하기
+				</Button>
+				<ShareButton resultData={resultData} />
+			</div>
 		</Wrapper>
 	);
 };

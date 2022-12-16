@@ -18,7 +18,7 @@ const AllResultPage = () => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<Wrapper>
+		<Wrapper className={styles.wrap}>
 			<Candles className={styles["candles-icon"]} />
 			<h1 className={styles.title}>질투 유형 순위</h1>
 			<main>
