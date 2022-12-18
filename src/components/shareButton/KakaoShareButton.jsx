@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ReactComponent as KakaoBtn } from "../assets/svg/icon_kakao.svg";
+import { ReactComponent as KakaoBtn } from "../../assets/svg/icon_kakao.svg";
 const { Kakao } = window;
 
 const KakaoShareButton = ({ resultData }) => {

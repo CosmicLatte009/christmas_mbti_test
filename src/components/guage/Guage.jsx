@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../style/Guage.module.scss";
+import styles from "../../style/guageStyle/Guage.module.scss";
 import GuageHeart from "./GuageHeart";
 
 const Guage = ({ resultData }) => {

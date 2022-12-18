@@ -1,4 +1,4 @@
-@import "utils";
+@import "../commonStyle/utils";
 
 .title {
 	@include font-style(
@@ -8,7 +8,7 @@
 		map-get($colors, text)
 	);
 	padding: 10px;
-	background-image: url("../assets/svg/icon_label.svg");
+	background-image: url("../../assets/svg/icon_label.svg");
 	background-position: 38%;
 	background-repeat: no-repeat;
 	background-size: 30px;

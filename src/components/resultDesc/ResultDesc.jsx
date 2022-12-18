@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../style/ResultDesc.module.scss";
+import styles from "../../style/resultDescStyle/ResultDesc.module.scss";
 import ResultList from "./ResultList";
 
 const ResultDesc = ({ resultData }) => {

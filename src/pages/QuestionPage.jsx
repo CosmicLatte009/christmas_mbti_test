@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { QuestionData } from "../assets/data/questionData";
 import { ReactComponent as BookSVG } from "../assets/svg/icon_book.svg";
-import Wrapper from "../components/Wrapper";
-import Button from "../components/Button";
-import styles from "../style/QuestionPage.module.scss";
+import Wrapper from "../components/common/Wrapper";
+import Button from "../components/common/Button";
+import styles from "../style/pagesStyle/QuestionPage.module.scss";
 
 const QuestionPage = () => {
 	const [questionNum, setQuestionNum] = useState(0);

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../style/Button.module.scss";
+import styles from "../../style/commonStyle/Button.module.scss";
 
 const Button = (props) => {
 	const { children, onClick, bold, option } = props;

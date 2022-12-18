@@ -1,8 +1,8 @@
 import React from "react";
-import FacebookShareButton from "../components/FacebookShareButton";
-import KakaoShareButton from "../components/KakaoShareButton";
-import TwitterShareButton from "../components/TwitterShareButton";
-import styles from "../style/ShareButton.module.scss";
+import FacebookShareButton from "./FacebookShareButton";
+import KakaoShareButton from "./KakaoShareButton";
+import TwitterShareButton from "./TwitterShareButton";
+import styles from "../../style/shareButtonStyle/ShareButton.module.scss";
 
 const ShareButton = ({ resultData }) => {
 	return (

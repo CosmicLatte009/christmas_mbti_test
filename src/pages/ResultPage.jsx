@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { ResultData } from "../assets/data/resultData";
 import { ReactComponent as Bow } from "../assets/svg/icon_bowGreen.svg";
-import Wrapper from "../components/Wrapper";
-import Match from "../components/Match";
-import Guage from "../components/Guage";
-import ResultDesc from "../components/ResultDesc";
-import Button from "../components/Button";
-import ShareButton from "../components/ShareButton.jsx";
-import styles from "../style/ResultPage.module.scss";
+import Wrapper from "../components/common/Wrapper";
+import Match from "../components/match/Match";
+import Guage from "../components/guage/Guage";
+import ResultDesc from "../components/resultDesc/ResultDesc";
+import Button from "../components/common/Button";
+import ShareButton from "../components/shareButton/ShareButton.jsx";
+import styles from "../style/pagesStyle/ResultPage.module.scss";
 
 const ResultPage = () => {
 	const navigate = useNavigate();

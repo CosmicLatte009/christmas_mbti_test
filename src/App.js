@@ -3,7 +3,7 @@ import QuestionPage from "./pages/QuestionPage";
 import ResultPage from "./pages/ResultPage";
 import AllResultPage from "./pages/AllResultPage";
 import { Routes, Route } from "react-router-dom";
-import "./style/reset.css";
+import "./style/commonStyle/reset.css";
 
 function App() {
 	return (

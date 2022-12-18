@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as TwitterBtn } from "../assets/svg/icon_twitter.svg";
+import { ReactComponent as TwitterBtn } from "../../assets/svg/icon_twitter.svg";
 
 const TwitterShareButton = ({ resultData }) => {
 	const resultUrl = window.location.href;

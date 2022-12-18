@@ -2,10 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as TitleLogo } from "../assets/svg/logo.svg";
 import { ReactComponent as Bow } from "../assets/svg/icon_bow.svg";
-import Wrapper from "../components/Wrapper";
-import Button from "../components/Button";
-// import btns from "../style/Button.module.scss";
-import styles from "../style/HomePage.module.scss";
+import Wrapper from "../components/common/Wrapper";
+import Button from "../components/common/Button";
+import styles from "../style/pagesStyle/HomePage.module.scss";
 
 const HomePage = () => {
 	const navigate = useNavigate();

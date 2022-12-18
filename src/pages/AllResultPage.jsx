@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useNavigate, createSearchParams } from "react-router-dom";
 import { ResultData } from "../assets/data/resultData";
 import { ReactComponent as Candles } from "../assets/svg/icon_candles.svg";
-import Wrapper from "../components/Wrapper";
-import Button from "../components/Button";
-import styles from "../style/AllResultPage.module.scss";
+import Wrapper from "../components/common/Wrapper";
+import Button from "../components/common/Button";
+import styles from "../style/pagesStyle/AllResultPage.module.scss";
 
 const AllResultPage = () => {
 	const navigate = useNavigate();

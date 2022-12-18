@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../style/Match.module.scss";
+import styles from "../../style/matchStyle/Match.module.scss";
 import MatchBox from "./MatchBox";
 
 const Guage = ({ resultData }) => {
