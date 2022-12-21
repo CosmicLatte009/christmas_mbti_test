@@ -144,7 +144,7 @@ const newScore = totalScore.map((s) =>
 		const mbti = newScore.reduce(
 			(acc, curr) =>
 			acc + (curr.score >= 2 ?
-            curr.id.slice(0, 1) : curr.id.slice(1, 2)), ""
+            curr.id.substring(0, 1) : curr.id.substring(1, 2)), ""
 		);
         //결과 페이지로 이동
         navigate({
