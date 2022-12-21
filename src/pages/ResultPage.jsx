@@ -8,7 +8,7 @@ import Guage from "../components/guage/Guage";
 import ResultDesc from "../components/resultDesc/ResultDesc";
 import Button from "../components/common/Button";
 import ShareButton from "../components/shareButton/ShareButton.jsx";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import styles from "../style/pagesStyle/ResultPage.module.scss";
 
 const ResultPage = () => {
