@@ -138,7 +138,7 @@ sass-loader: "^13.2.0"
 
 ### **1. 유형별 점수 추가하기**
 
-```
+```javascript
 const [totalScore, setTotalScore] = useState([
 		{ id: "EI", score: 0 },
 		{ id: "SN", score: 0 },
@@ -159,7 +159,7 @@ const newScore = totalScore.map((s) =>
 
 ### **2. 문항 수 증가시키다가 12번 문항에서 mbti 도출**
 
-```
+```javascript
 11번 문제까진 다음 문제로 문제수 증가
  if (QuestionData.length !== questionNum + 1) {
 		setQuestionNum(questionNum + 1);
@@ -196,7 +196,7 @@ const newScore = totalScore.map((s) =>
 
 ### **1. QuestionPage로부터 mbti 데이터 받아오기**
 
-```
+```javascript
 const navigate = useNavigate();
 const [searchParams] = useSearchParams();
 const mbti = searchParams.get("mbti");
