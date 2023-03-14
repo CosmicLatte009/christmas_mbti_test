@@ -2,7 +2,7 @@
 
 # 🎄크리스마스 MBTI 유형 테스트🎄
 
-<img width="500" src="https://user-images.githubusercontent.com/87015026/223358808-7c06dd25-d3dd-4525-842a-d4a39029e0d7.png">
+<img width="800" src="https://user-images.githubusercontent.com/87015026/225015334-44184042-85fe-4f10-b2b8-593afeac3834.png">
 
 </div>
 </br>
