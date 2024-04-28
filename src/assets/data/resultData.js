@@ -1,19 +1,19 @@
-import Dog from "../typeImage/01_dog.png";
-import Rabbit from "../typeImage/02_rabbit.png";
-import Snowman from "../typeImage/03_snowman.png";
-import Fairy from "../typeImage/04_fairy.png";
-import Weasel from "../typeImage/05_weasel.png";
-import GingerBread from "../typeImage/06_gingerBread.png";
-import Penguin from "../typeImage/07_penguin.png";
-import Cat from "../typeImage/08_cat.png";
-import Racoon from "../typeImage/09_racoon.png";
-import Otter from "../typeImage/010_otter.png";
-import Rudolf from "../typeImage/011_rudolf.png";
-import HedgeHog from "../typeImage/012_hedgehog.png";
-import Duck from "../typeImage/013_duck.png";
-import Bear from "../typeImage/014_bear.png";
-import Owl from "../typeImage/015_owl.png";
-import Fox from "../typeImage/016_fox.png";
+import Dog from "../typeImage/01_dog.webp";
+import Rabbit from "../typeImage/02_rabbit.webp";
+import Snowman from "../typeImage/03_snowman.webp";
+import Fairy from "../typeImage/04_fairy.webp";
+import Weasel from "../typeImage/05_weasel.webp";
+import GingerBread from "../typeImage/06_gingerBread.webp";
+import Penguin from "../typeImage/07_penguin.webp";
+import Cat from "../typeImage/08_cat.webp";
+import Racoon from "../typeImage/09_racoon.webp";
+import Otter from "../typeImage/010_otter.webp";
+import Rudolf from "../typeImage/011_rudolf.webp";
+import HedgeHog from "../typeImage/012_hedgehog.webp";
+import Duck from "../typeImage/013_duck.webp";
+import Bear from "../typeImage/014_bear.webp";
+import Owl from "../typeImage/015_owl.webp";
+import Fox from "../typeImage/016_fox.webp";
 
 export const ResultData = [
 	{
