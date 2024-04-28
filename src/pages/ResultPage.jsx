@@ -9,6 +9,7 @@ import ResultDesc from "../components/resultDesc/ResultDesc";
 import Button from "../components/common/Button";
 import ShareButton from "../components/shareButton/ShareButton.jsx";
 import styles from "../style/pagesStyle/ResultPage.module.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ResultPage = () => {
 	const navigate = useNavigate();
@@ -27,7 +28,12 @@ const ResultPage = () => {
 		<Wrapper>
 			<Bow className={styles["bow-icon"]} />
 			<h1 className={styles.title}>{resultData.name}</h1>
-			<img src={resultData.image} alt="결과 이미지" width={300}></img>
+			<LazyLoadImage
+				src={resultData.image}
+				alt="결과 이미지"
+				width={300}
+				effect="blur"
+			/>
 			<Guage resultData={resultData} />
 			<ResultDesc resultData={resultData} />
 			<Match resultData={resultData} />
